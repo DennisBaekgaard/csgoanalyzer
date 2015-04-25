@@ -1,0 +1,11 @@
+{
+  "name": "´CSGOStats",
+  "description": "CS:GO Demo Analyzer tool",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.2",
+    "bootstrap-select-sass": "~1.6.3",
+    "font-awesome": "~4.3.0"
+  }
+}

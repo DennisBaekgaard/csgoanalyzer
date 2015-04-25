@@ -1,0 +1,71 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import "../vendor/font-awesome/scss/font-awesome";
+@import "../vendor/bootstrap-sass-official/assets/stylesheets/_bootstrap";
+ 
+
+ 
+
+body {
+	background-color: #303030;
+}
+
+nav {
+	background-color: #171717;
+	border-bottom: 1px solid #151515;
+	height: 75px;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%; 
+	
+	ul {
+		padding: 0px 20px; 
+		list-style: none;
+		position: relative;
+		display: inline-table;
+		
+		&:after {
+			content: ""; clear: both; display: block;
+		}
+
+		li {
+			float: left;
+			&:hover{
+				
+				> ul{
+					display: block;
+				}
+			}
+
+			a {
+				display: block; 
+				padding: 26px 40px;
+				color: #cecece; 
+				text-decoration: none;
+				font-size: 16px;
+
+				&:hover {
+					text-decoration: none;
+					color: #ff7e00;
+				}
+			}
+		}
+
+		ul{
+			display: none;
+			li {
+				float: none; 
+				border-top: 1px solid #202020;
+				border-bottom: 1px solid #151515;
+				position: relative;
+				background-color: #171717;
+
+				a{
+					padding: 10px 40px;
+					color: #fff;
+					font-size: 12px;
+				}
+			}
+
+		}
+	}
+}
